@@ -3221,18 +3221,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ledgerhq/devices@npm:8.4.4, @ledgerhq/devices@npm:^8.4.4":
-  version: 8.4.4
-  resolution: "@ledgerhq/devices@npm:8.4.4"
-  dependencies:
-    "@ledgerhq/errors": "npm:^6.19.1"
-    "@ledgerhq/logs": "npm:^6.12.0"
-    rxjs: "npm:^7.8.1"
-    semver: "npm:^7.3.5"
-  checksum: ea4c3dada124c5c0aad59837e1c399bf2f41f8b4da5c996aaf73bbf8719082598808947c505dc728266ff83fc5fea71170d3f0d18a9b5d59e6e2737ae8a38f39
-  languageName: node
-  linkType: hard
-
 "@ledgerhq/devices@npm:^8.4.2":
   version: 8.4.2
   resolution: "@ledgerhq/devices@npm:8.4.2"
@@ -3242,6 +3230,18 @@ __metadata:
     rxjs: "npm:^7.8.1"
     semver: "npm:^7.3.5"
   checksum: b7149c6302d23928fd2d3622d9018af10a56f6960732de0d72e881d19b75b0036f6248ca0845cfe9dfeda32ecb52c352423e79e109c7decf8437948fed7843cd
+  languageName: node
+  linkType: hard
+
+"@ledgerhq/devices@npm:^8.4.4":
+  version: 8.4.4
+  resolution: "@ledgerhq/devices@npm:8.4.4"
+  dependencies:
+    "@ledgerhq/errors": "npm:^6.19.1"
+    "@ledgerhq/logs": "npm:^6.12.0"
+    rxjs: "npm:^7.8.1"
+    semver: "npm:^7.3.5"
+  checksum: ea4c3dada124c5c0aad59837e1c399bf2f41f8b4da5c996aaf73bbf8719082598808947c505dc728266ff83fc5fea71170d3f0d18a9b5d59e6e2737ae8a38f39
   languageName: node
   linkType: hard
 
@@ -3256,18 +3256,6 @@ __metadata:
   version: 6.19.1
   resolution: "@ledgerhq/errors@npm:6.19.1"
   checksum: 5cfbd5ff5e4316afc88c456a74d3dc0e0032dafd88f656e80a5cb5b297a75ba6701c53ce38ef3f38a84a8591c499b0b9248cdf352ff34c97a550440cdaddd8d2
-  languageName: node
-  linkType: hard
-
-"@ledgerhq/hw-transport-webhid@npm:^6.30.0":
-  version: 6.30.0
-  resolution: "@ledgerhq/hw-transport-webhid@npm:6.30.0"
-  dependencies:
-    "@ledgerhq/devices": "npm:8.4.4"
-    "@ledgerhq/errors": "npm:^6.19.1"
-    "@ledgerhq/hw-transport": "npm:^6.31.4"
-    "@ledgerhq/logs": "npm:^6.12.0"
-  checksum: 1cb6ddb50127d6cb73d80259e10da687a2b7aa87ebbac8cc3e770ac5b95a3ef0001bdaf77109da0eb62509cb8668a9642858b59cb0ff355c1adb0fe2114c532c
   languageName: node
   linkType: hard
 
@@ -3473,7 +3461,6 @@ __metadata:
     "@cosmjs/encoding": "npm:^0.29.0"
     "@dao-xyz/borsh": "npm:^5.1.5"
     "@ledgerhq/hw-transport": "npm:^6.31.4"
-    "@ledgerhq/hw-transport-webhid": "npm:^6.30.0"
     "@ledgerhq/hw-transport-webusb": "npm:^6.29.4"
     "@svgr/webpack": "npm:^6.3.1"
     "@types/chrome": "npm:^0.0.237"
@@ -3754,7 +3741,6 @@ __metadata:
     "@cosmjs/encoding": "npm:^0.29.0"
     "@dao-xyz/borsh": "npm:^5.1.5"
     "@ledgerhq/hw-transport": "npm:^6.31.4"
-    "@ledgerhq/hw-transport-webhid": "npm:^6.30.0"
     "@ledgerhq/hw-transport-webusb": "npm:^6.29.4"
     "@release-it/conventional-changelog": "npm:^8.0.1"
     "@types/jest": "npm:^29.5.12"
