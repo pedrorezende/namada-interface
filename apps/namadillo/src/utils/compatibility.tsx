@@ -36,9 +36,10 @@ export const checkIndexerCompatibilityErrors = (
   if (checkResult === CompatibilityOutput.IncompatibleVersion) {
     return (
       <>
-        You&apos;re using an outdated version of Namada Indexer. Please update
-        your indexer URL in the{" "}
-        <Link to={routes.settingsAdvanced}>Advanced Settings</Link> section.
+        Your Namadillo is using an outdated version of Namada Indexer. Some
+        features may not work as intended. You can update your indexer URL in
+        the <Link to={routes.settingsAdvanced}>Advanced Settings</Link> section
+        or wait for the operator to update the Indexer.
       </>
     );
   }
@@ -84,8 +85,8 @@ export const checkKeychainCompatibilityError = (
           >
             Chrome store
           </a>
-        }{" "}
-        or websites.
+        }
+        .
       </>
     );
   }
@@ -93,9 +94,10 @@ export const checkKeychainCompatibilityError = (
   if (checkResult === CompatibilityOutput.InterfaceOutdated) {
     return (
       <>
-        Your Namadillo version is not compatible with the keychain installed.
-        Please upgrade your web interface or pick a different one from the{" "}
-        <a href="https://namada.net/apps#interfaces">Namada Apps</a> list.
+        Your Namadillo version is not compatible with the Namada Keychain
+        installed. Please upgrade your web interface or pick a different one
+        from the <a href="https://namada.net/apps#interfaces">Namada Apps</a>{" "}
+        list.
       </>
     );
   }
