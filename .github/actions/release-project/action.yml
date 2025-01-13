@@ -8,9 +8,6 @@ on:
       bundle_filename:
         required: true
         type: string
-      working_dir:
-        required: true
-        type: string
 
 runs:
   using: composite
