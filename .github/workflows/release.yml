@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - feat/release-please
+      - main
 
 permissions:
   contents: write
@@ -22,8 +22,6 @@ jobs:
     steps:
       - uses: googleapis/release-please-action@v4
         id: release
-        with:
-          target-branch: feat/release-please
 
   build-namadillo:
     needs: [release-please]
