@@ -30,6 +30,9 @@ jobs:
     if: ${{ needs.release-please.outputs.namadillo_tag }}
     name: Release Namadillo
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./apps/namadillo
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
@@ -39,13 +42,15 @@ jobs:
         with:
           tag: ${{ needs.release-please.outputs.namadillo_tag }}
           bundle_filename: ${{ needs.release-please.outputs.namadillo_tag }}.zip
-          working_dir: ./apps/namadillo
 
   build-sdk:
     needs: [release-please]
     if: ${{ needs.release-please.outputs.sdk_tag }}
     name: Release SDK
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/sdk
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
@@ -62,6 +67,9 @@ jobs:
     if: ${{ needs.release-please.outputs.types_tag }}
     name: Release Types
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./packages/types
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
@@ -77,6 +85,9 @@ jobs:
     needs: release-please
     if: ${{ needs.release-please.outputs.extension_tag }}
     runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: ./apps/extension
     steps:
       - name: Build Chrome Extension
         uses: ./.github/actions/build-extension
@@ -88,6 +99,9 @@ jobs:
     needs: release-please
     if: ${{ needs.release-please.outputs.extension_tag }}
     runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: ./apps/extension
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
